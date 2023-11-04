@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root{
+  color-scheme: dark;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #ccc;
+  background: black;
+  padding: 1.6rem;
+  overflow-y: scroll;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+footer{
+  margin-top:2rem;
+  font-size: 0.9rem;
+}
+
+div {
+  border-radius: 8px;
+  padding-block:1rem;
+  padding-inline: 1.2rem;
+  margin-block-end: 0.8rem;
+  background-color: #fff1;
+}
+a, input {
+  display: inline-block;
+  border-radius: 8px;
+  margin-inline-end: 0.8rem;
+  margin-block-end: 0.8rem;
+  background-color: #ccc;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-block:0.6rem;
+  padding-inline: 1rem;
+}
+a:hover {
+  filter: brightness(0.8)
+}
+input{
+  font-weight: 500;
+  background-color: #eee;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #eee;
+  letter-spacing: -0.75px;
+  line-height: 3;
+}
+h2{
+  color: #eee;
+  font-size:1.1rem;
+  font-weight: 600;
+  line-height: 2;
+}
+p{
+  margin-block: 0.2rem;
+  margin-block-end: 0.6rem;
+}
+
+small{
+  opacity: 0.6;
+}
+code{
+  background-color: #000e;
 }
