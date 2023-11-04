@@ -18,6 +18,18 @@ footer{
   margin-top:2rem;
   font-size: 0.9rem;
 }
+footer a {
+  background: transparent;
+  color: white;
+  padding-inline: 0;
+  margin-inline-end: 1.5rem;
+  border: transparent !important;
+}
+svg {
+  display: inline;
+  font-size: 1.4em;
+  vertical-align: -0.3em;
+}
 
 div {
   border-radius: 8px;
@@ -38,19 +50,33 @@ a, input {
   padding-block:0.6rem;
   padding-inline: 1rem;
 }
+a[href^=http]{
+  background: black;
+  color: white;
+  border: #fff2 solid 1px
+}
 a:hover {
   filter: brightness(0.8)
+}
+u{
+  text-underline-offset: 4px;
+}
+pre{
+  opacity: 0.9;
 }
 input{
   font-weight: 500;
   background-color: #eee;
+}
+header{
+  margin-block: 2rem;
 }
 h1{
   font-size: 2rem;
   font-weight: 600;
   color: #eee;
   letter-spacing: -0.75px;
-  line-height: 3;
+  /* line-height: 3; */
 }
 h2{
   color: #eee;
