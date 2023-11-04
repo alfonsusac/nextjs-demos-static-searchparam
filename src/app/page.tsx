@@ -77,6 +77,17 @@ export default function Home(p: { params: any, searchParams: any }) {
           <ClientSideContent />
         </div>
       </Suspense>
+      <div>
+        <h2>
+          Partial Prerendering
+        </h2>
+        <p>
+          <small>{ `Partial Prerendering allows the ability to render static "shells" and have dynamically computed content at request time, allowing the ability to combine SSG content and Request-time content.` }</small>
+        </p>
+        <p>
+          <small>{ `Partial Prendering is still a preview feature at the moment.` }</small>
+        </p>
+      </div>
 
       <h2>Resources</h2>
       <a href="https://nextjs.org/docs/app/api-reference/functions/use-search-params#static-rendering">
@@ -86,6 +97,14 @@ export default function Home(p: { params: any, searchParams: any }) {
       <a href="https://nextjs.org/docs/messages/deopted-into-client-rendering">
         <MingcuteExternalLinkLine />{' '}
         Next.js - Entire page deopted into client-side rendering
+      </a>
+      <a href="https://nextjs.org/learn/dashboard-app/partial-prerendering">
+        <MingcuteExternalLinkLine />{' '}
+        Learn Next.js - Partial Prerendering
+      </a>
+      <a href="https://nextjs.org/blog/next-14#partial-prerendering-preview">
+        <MingcuteExternalLinkLine />{' '}
+        Next.js 14 #Partial Prerendering
       </a>
 
     </main>

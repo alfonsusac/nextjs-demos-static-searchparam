@@ -8,9 +8,7 @@ export function SearchParamBoundary(p: {
   children: React.ReactNode
 }) {
   const sp = useSearchParams()
-  // console.log(p.spkey)
-  // console.log(sp.get(p.spkey))
   return (
-    sp.get(p.spkey) === p.value ? p.children : null
+    sp.get(p.spkey) === p.value ? p.children : <div className="hidden">p.children</div>
   )
 }
